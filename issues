@@ -1,0 +1,30 @@
+1-Lire les données depuis raw_data.csv 
+Objectif :
+
+        - Créer une fonction load_data(path) dans src/load.py qui charge un fichier CSV avec pandas.
+        - Retourner un DataFrame.
+
+2-Nettoyer les valeurs manquantes 
+Objectif : Créer une fonction clean_data(df) dans src/clean.py.
+Détails :
+
+    - Remplacer les NaN dans les colonnes numériques par la moyenne de la colonne respective.
+    - Remplacer les valeurs vides ou NaN dans les colonnes textuelles (name, education, city, notes) : Les valeurs manquantes sont remplacées par "Unknown"
+
+3-Afficher des statistiques #3
+Objectif :
+
+- Créer une fonction show_stats(df) dans src/summary.py.
+- Afficher les statistiques descriptives avec .describe() et info.
+
+4Compter les genres #4
+
+Objectif :
+- Créer une fonction count_gender(df) dans src/summary.py.
+- Afficher combien de lignes ont gender = Male ou Female.
+5Créer un script principal main.py #5
+Objectif :
+
+  - Appeler les fonctions des autres tickets dans le bon ordre.
+  - Charger, nettoyer, transformer et afficher le résultat.
+  - Afficher un aperçu du DataFrame avec .head().
